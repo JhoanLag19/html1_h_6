@@ -1,0 +1,170 @@
+:root{
+    --green: #00BF63;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+/* Utilidades */
+
+.flex {
+    display: flex;
+}
+
+div p {
+    margin: 0;
+}
+
+/* -------------------- */
+
+.article > p, .bold {
+    font-weight: 800;
+}
+
+.borcelle,
+.green-circle-texto1,
+.green-circle-texto2,
+footer button {
+    text-transform: uppercase;    
+}
+
+header {
+    width: 100%;
+    height: 638px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image: url(../img/2.png);
+    background-position: center center;
+    z-index: -1;
+    align-items: center;
+    margin-bottom: 76px;
+}
+
+.header__contenido {
+    width: 72%;
+    margin: 0 auto;
+    column-gap: 120px;
+}
+
+.borcelle {
+    display: inline-block;
+    background-color: #000;
+    color: #FFF;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 22px;
+}
+
+.enjoy, .dont-miss {
+    line-height: 1.3;
+}
+
+.enjoy {
+    font-size: 68px;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+}
+
+.dont-miss {
+    font-size: 28px;
+}
+
+.green-circle {
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: var(--green);
+    color: #FFF;
+    width: 282px;
+    height: 282px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-circle p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.green-circle-texto1 {
+    font-size: 70px;
+}
+
+.green-circle-texto2 {
+    font-size: 50px;
+
+}
+
+main section {
+    width: 75%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 120px;
+    row-gap: 80px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+}
+
+article > p {
+    margin-bottom: 8px;
+}
+
+article div {
+    align-items: center;
+    gap: 30px;
+}
+
+.cross-out {
+    text-decoration: line-through 3px red;
+}
+
+article > p, .cross-out, .precio {
+    font-size: 19px;
+}
+
+footer {
+    height: 170px;
+    width: 97%;
+    margin: 60px auto 0 auto;
+    background-color: #000;
+}
+
+footer button {
+    display: inline-block;
+    border: none;
+    background-color: var(--green);
+    color: #FFF;
+    margin: 62px 0 0 196px;
+    padding: 13px 35px;
+    border-radius: 40px;
+    font-size: 26px;
+}
+
+footer button:hover {
+    cursor: pointer;
+    background-color: #FFF;
+    color: var(--green);
+    font-weight: 600;
+}
